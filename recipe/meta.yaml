@@ -1,5 +1,5 @@
 {% set name = "django-rdkit" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/rdkit/django-rdkit/archive/v{{ version }}.tar.gz
-  sha256: 4c507274b41c4759c2f345d43854c0eafeb5ecfe877299b7481975f6cf22f6a7
+  sha256: caa4394b858a02f88a526dc0c029d3500085f1756e4d465ecdb7733dac6814e9
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -27,10 +27,10 @@ test:
 
 about:
   home: https://github.com/rdkit/django-rdkit
-  license:  BSD-3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'A Django extension to easily use RDKit functionalities'
+  summary: A Django extension to easily use RDKit functionalities
   description: |
     django-rdkit offers models for molecules that makes it very easy to create chemically-aware django applications
   doc_url: https://django-rdkit.readthedocs.io
