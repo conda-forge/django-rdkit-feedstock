@@ -1,5 +1,5 @@
 {% set name = "django-rdkit" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/rdkit/django-rdkit/archive/v{{ version }}.tar.gz
-  sha256: caa4394b858a02f88a526dc0c029d3500085f1756e4d465ecdb7733dac6814e9
+  sha256: 7ab4013eb71f4935b4ef4442dddd5242db9cf115dfb20cc515039b89ccd36649
 
 build:
   noarch: python
